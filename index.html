@@ -446,6 +446,182 @@
       font-size: 0.95rem;
     }
 
+.case-study {
+      padding: 2rem;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: linear-gradient(145deg, rgba(10, 20, 13, 0.96), rgba(3, 8, 4, 0.98));
+      box-shadow: var(--shadow);
+    }
+    .case-study-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 1rem;
+      margin-bottom: 1.25rem;
+    }
+    .case-study-header h2 {
+      margin: 0 0 0.35rem;
+      font-family: "Space Grotesk", sans-serif;
+      font-size: clamp(1.7rem, 2vw, 2.25rem);
+      letter-spacing: -0.04em;
+    }
+    .case-study-subtitle {
+      margin: 0;
+      color: var(--muted);
+      max-width: 42rem;
+    }
+    .case-study-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      color: var(--accent-soft);
+      font-weight: 700;
+      text-decoration: none;
+      white-space: nowrap;
+    }
+    .case-study-link:hover,
+    .case-study-link:focus-visible {
+      color: var(--accent);
+    }
+    .case-grid {
+      display: grid;
+      grid-template-columns: 1.4fr 0.6fr;
+      gap: 1.1rem;
+      align-items: start;
+    }
+    .case-body h3 {
+      margin: 1.1rem 0 0.4rem;
+      color: var(--text);
+      font-size: 1.08rem;
+      letter-spacing: -0.02em;
+    }
+    .case-body p,
+    .case-body li,
+    .case-body td,
+    .case-body th {
+      color: var(--muted);
+    }
+    .case-body ul {
+      margin: 0.5rem 0 0;
+      padding-left: 1.2rem;
+    }
+    .case-body strong { color: var(--text); }
+    .architecture-wrap {
+      margin-top: 0.9rem;
+      padding: 1rem;
+      border-radius: 1.1rem;
+      background: rgba(255,255,255,0.02);
+      border: 1px solid rgba(255,255,255,0.08);
+    }
+    .architecture-label {
+      margin: 0 0 0.7rem;
+      color: var(--accent-soft);
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.11em;
+      text-transform: uppercase;
+    }
+    .architecture-diagram {
+      display: grid;
+      grid-template-columns: repeat(7, minmax(70px, 1fr));
+      gap: 0.6rem;
+      align-items: center;
+    }
+    .diagram-node {
+      position: relative;
+      min-height: 48px;
+      padding: 0.6rem 0.55rem;
+      border-radius: 0.8rem;
+      background: rgba(47, 143, 74, 0.12);
+      border: 1px solid rgba(47, 143, 74, 0.22);
+      color: var(--text);
+      text-align: center;
+      font-size: 0.72rem;
+      line-height: 1.3;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .diagram-node.is-strong {
+      background: rgba(95, 182, 115, 0.14);
+    }
+    .diagram-arrow {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--accent-soft);
+      font-size: 1.2rem;
+      line-height: 1;
+    }
+    .diagram-txt {
+      margin-top: 0.7rem;
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+    .decision-list {
+      display: grid;
+      gap: 0.8rem;
+      margin-top: 0.8rem;
+    }
+    .decision-item {
+      padding: 0.9rem 1rem;
+      border-radius: 1rem;
+      background: rgba(255,255,255,0.02);
+      border: 1px solid rgba(255,255,255,0.08);
+    }
+    .decision-item h4 {
+      margin: 0 0 0.35rem;
+      color: var(--text);
+      font-size: 1rem;
+    }
+    .decision-item p {
+      margin: 0.2rem 0;
+    }
+    .case-evidence {
+      padding: 1rem;
+      border: 1px solid var(--line);
+      border-radius: 1rem;
+      background: rgba(47, 143, 74, 0.05);
+    }
+    .case-evidence h3 {
+      margin: 0 0 0.75rem;
+      color: var(--accent-soft);
+      font-size: 0.74rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+    .evidence-table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    .evidence-table th,
+    .evidence-table td {
+      padding: 0.52rem 0.4rem;
+      text-align: left;
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+      vertical-align: top;
+      font-size: 0.92rem;
+    }
+    .evidence-table th {
+      width: 38%;
+      color: var(--text);
+      font-weight: 700;
+    }
+    .flagship-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+      padding: 0.42rem 0.68rem;
+      border-radius: 999px;
+      background: rgba(95, 182, 115, 0.1);
+      border: 1px solid rgba(95, 182, 115, 0.25);
+      color: var(--accent-soft);
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+    }
     .project-highlight {
       display: grid;
       gap: 1rem;
@@ -717,37 +893,171 @@
       </div>
     </section>
 
+    <section id="case-study">
+      <div class="container">
+        <div class="case-study reveal">
+          <div class="case-study-header">
+            <div>
+              <h2>Engineering Case Study</h2>
+              <p class="case-study-subtitle">One project examined beyond the surface: problem, architecture, implementation, evaluation, and lessons learned.</p>
+            </div>
+            <a class="case-study-link" href="https://github.com/Lazaro549/ai-evaluation-platform" target="_blank" rel="noreferrer noopener">Public implementation on GitHub <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+
+          <div class="case-grid">
+            <div class="case-body">
+              <h3>01 — Problem</h3>
+              <p>The project identifies a common failure mode in LLM applications: they can look convincing in demos without a repeatable way to evaluate quality, reliability, cost, and latency. That makes model selection and release decisions fragile. The repository addresses this by turning evaluation into a structured pipeline rather than a one-off prompt test.</p>
+
+              <h3>02 — Architecture</h3>
+              <p>The public implementation is a modular evaluation platform built around a dataset-driven runner, provider abstraction, metrics engine, SQLite persistence, FastAPI endpoints, and a Streamlit dashboard.</p>
+
+              <div class="architecture-wrap">
+                <div class="architecture-label">Architecture derived from the current public implementation</div>
+                <div class="architecture-diagram" aria-label="AI Evaluation Platform architecture diagram">
+                  <div class="diagram-node">Dataset</div>
+                  <div class="diagram-arrow">→</div>
+                  <div class="diagram-node is-strong">Evaluation Runner</div>
+                  <div class="diagram-arrow">→</div>
+                  <div class="diagram-node">Model Provider</div>
+                  <div class="diagram-arrow">→</div>
+                  <div class="diagram-node">Metrics</div>
+                  <div class="diagram-arrow">→</div>
+                  <div class="diagram-node is-strong">Results</div>
+                  <div class="diagram-arrow">→</div>
+                  <div class="diagram-node">Reports</div>
+                  <div class="diagram-arrow">→</div>
+                  <div class="diagram-node">FastAPI API</div>
+                  <div class="diagram-arrow">→</div>
+                  <div class="diagram-node">Dashboard</div>
+                </div>
+                <div class="diagram-txt">The system begins with dataset input, evaluates model output through provider abstraction, scores it with deterministic and judge-based metrics, stores results, and exposes them through reports and dashboard/API access.</div>
+              </div>
+
+              <h3>03 — Engineering Decisions</h3>
+              <div class="decision-list">
+                <article class="decision-item">
+                  <h4>Provider abstraction</h4>
+                  <p><strong>Decision:</strong> The project separates model access behind a provider interface.</p>
+                  <p><strong>Why:</strong> This allows offline mock evaluation, OpenAI integration, and Amazon Bedrock support without rewriting the evaluation pipeline.</p>
+                  <p><strong>Trade-off:</strong> The abstraction keeps the architecture clean, but it depends on provider-specific adapters and does not attempt to hide every difference between model APIs.</p>
+                </article>
+                <article class="decision-item">
+                  <h4>SQLite for local persistence</h4>
+                  <p><strong>Decision:</strong> Results are stored in SQLite instead of a distributed database.</p>
+                  <p><strong>Why:</strong> This fits a local, reproducible evaluation workflow and keeps the project easier to run and reason about with minimal setup.</p>
+                  <p><strong>Trade-off:</strong> It is appropriate for a local evaluation platform, but it is not a substitute for a horizontally scaled production data layer.</p>
+                </article>
+                <article class="decision-item">
+                  <h4>Deterministic + judge-based evaluation</h4>
+                  <p><strong>Decision:</strong> The repository separates deterministic metrics from LLM-as-a-judge metrics.</p>
+                  <p><strong>Why:</strong> This makes quality assessment more transparent and easier to reason about than relying on a single opaque metric.</p>
+                  <p><strong>Trade-off:</strong> Deterministic metrics can miss nuanced response quality, while judge-based metrics still depend on the judgment model itself.</p>
+                </article>
+                <article class="decision-item">
+                  <h4>Docker + CI workflow</h4>
+                  <p><strong>Decision:</strong> The project includes Docker support and a GitHub Actions workflow.</p>
+                  <p><strong>Why:</strong> Reproducibility matters for evaluation tasks, especially when the goal is to compare models objectively.</p>
+                  <p><strong>Trade-off:</strong> This improves repeatability, but it does not replace a fully productionized deployment pipeline or a larger-scale monitoring layer.</p>
+                </article>
+              </div>
+
+              <h3>04 — Evaluation</h3>
+              <p>The project is evaluated through a dataset-driven workflow, model comparison logic, and reports generated in JSON, CSV, and Markdown. The public README explicitly includes <strong>22 benchmark cases</strong> in the sample dataset and describes deterministic metrics plus LLM-as-a-judge evaluation. The repository includes pytest-based tests, FastAPI integration patterns, and a CI workflow. Latency and cost are part of the evaluation design, but they are not quantified in the public implementation as a single benchmark result.</p>
+
+              <h3>05 — Result</h3>
+              <p>The project demonstrates a working evaluation pipeline: dataset ingestion, provider abstraction, execution, local persistence, structured scoring, API access, dashboard exploration, and report generation. It is a good example of evaluation-first thinking instead of a demo-only LLM app.</p>
+
+              <h3>06 — Limitations &amp; Next Steps</h3>
+              <ul>
+                <li><strong>Local persistence:</strong> SQLite keeps the project reproducible and lightweight, but it is not designed for scaled multi-user production workloads.</li>
+                <li><strong>Sample dataset size:</strong> The public sample includes 22 benchmark cases, which is useful for demos and reproducibility but not representative of a broad real-world benchmark suite.</li>
+                <li><strong>Judgment dependency:</strong> LLM-as-a-judge metrics can be useful, but they still depend on the judge model and prompt design.</li>
+                <li><strong>No large production deployment layer:</strong> The public repo focuses on evaluation workflows rather than a full-scale multi-tenant production service.</li>
+              </ul>
+
+              <h3>07 — What I Learned</h3>
+              <ul>
+                <li>Evaluation should be designed alongside the application, not added at the end as a post-hoc checklist.</li>
+                <li>Provider abstraction matters because model choice and infrastructure constraints change faster than application code.</li>
+                <li>Reproducibility is a system feature, not a documentation afterthought: local runs, datasets, CI, and reports make a project easier to trust and debug.</li>
+              </ul>
+            </div>
+
+            <aside class="case-evidence">
+              <h3>Evidence snapshot</h3>
+              <table class="evidence-table">
+                <tr>
+                  <th>Architecture</th>
+                  <td>Modular API, provider layer, metrics engine, SQLite, reports, dashboard</td>
+                </tr>
+                <tr>
+                  <th>Evaluation</th>
+                  <td>22 benchmark cases; deterministic + LLM-as-a-judge metrics; run comparison</td>
+                </tr>
+                <tr>
+                  <th>Testing</th>
+                  <td>pytest suite and GitHub Actions CI included</td>
+                </tr>
+                <tr>
+                  <th>Deployment</th>
+                  <td>Docker + Docker Compose support included</td>
+                </tr>
+                <tr>
+                  <th>Reproducibility</th>
+                  <td>Sample datasets, offline mock provider, repeatable local evaluation flow</td>
+                </tr>
+                <tr>
+                  <th>Observability</th>
+                  <td>Latency, token usage, and cost are part of the design; exact production metrics are not claimed beyond the repo’s public implementation</td>
+                </tr>
+              </table>
+            </aside>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section id="projects">
       <div class="container">
         <div class="section-heading reveal">
           <h2>Selected work</h2>
-          <p>I prioritize depth over volume here, especially around the Anthropic Academy starter series and AWS-based AI work.</p>
+          <p>I prioritize technical depth over breadth, with the most credible evidence in evaluation systems, cloud AI, and computer vision.</p>
         </div>
 
         <div class="project-highlight">
           <article class="project-card reveal">
-            <div class="pill"><i class="fa-solid fa-microchip"></i> Anthropic Academy</div>
-            <h3>claude-code-starter</h3>
-            <p>A starter repo built around Claude Code workflows: skills, subagents, hooks, and CI patterns that make agent-driven development feel structured, scalable, and production-minded.</p>
+            <div class="flagship-badge"><i class="fa-solid fa-magnifying-glass"></i> Deep dive</div>
+            <div class="pill"><i class="fa-solid fa-scale-balanced"></i> AI evaluation</div>
+            <h3>ai-evaluation-platform</h3>
+            <p><strong>Why this matters:</strong> Demonstrates evaluation-first thinking for LLM applications and a more credible engineering approach than demo-only AI work.</p>
+            <p>The repository is structured around dataset-driven benchmarking, provider abstraction, metrics, reporting, SQLite persistence, FastAPI access, and a Streamlit dashboard.</p>
             <div class="chip-list">
-              <span>skills</span>
-              <span>subagents</span>
-              <span>hooks</span>
-              <span>CI workflows</span>
+              <span>FastAPI</span>
+              <span>Streamlit</span>
+              <span>SQLite</span>
+              <span>pytest</span>
             </div>
-            <a class="project-link" href="https://github.com/Lazaro549/claude-code-starter" target="_blank" rel="noreferrer noopener">View repository <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            <a class="project-link" href="https://github.com/Lazaro549/ai-evaluation-platform" target="_blank" rel="noreferrer noopener">View repository <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
           </article>
 
           <article class="project-card reveal">
             <div class="pill"><i class="fa-solid fa-cloud"></i> AWS AI</div>
             <h3>AWS AI Generative</h3>
-            <p>Practical generative AI examples on AWS, including chatbot and retrieval-style workflows built with Amazon Bedrock, Anthropic Claude, and Python.</p>
-            <div class="meta">Python • Bedrock • Claude • Jupyter</div>
+            <p><strong>Why this matters:</strong> Demonstrates cloud AI architecture beyond a basic chatbot, including Bedrock, serverless patterns, and evaluation-oriented workflows.</p>
+            <div class="meta">Python • Bedrock • Lambda • SAM</div>
             <a class="project-link" href="https://github.com/Lazaro549/AWS-AI-Generative" target="_blank" rel="noreferrer noopener">View repository <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
           </article>
         </div>
 
         <div class="project-grid">
+          <article class="project-card reveal">
+            <div class="pill"><i class="fa-solid fa-eye"></i> Computer vision</div>
+            <h3>robot-vision-dashboard</h3>
+            <p><strong>Why this matters:</strong> Demonstrates computer vision inference combined with runtime observability and a robotics-oriented dashboard workflow.</p>
+            <div class="meta">TensorFlow.js • COCO-SSD • browser inference</div>
+            <a class="project-link" href="https://github.com/Lazaro549/robot-vision-dashboard" target="_blank" rel="noreferrer noopener">View repository <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </article>
           <article class="project-card reveal">
             <div class="pill"><i class="fa-solid fa-robot"></i> Anthropic Academy</div>
             <h3>claude-api-starter</h3>
