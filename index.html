@@ -656,6 +656,15 @@
       margin-bottom: 1rem;
     }
     .project-card { padding: 1.35rem; }
+    .project-evidence {
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      object-fit: cover;
+      margin: -0.1rem 0 1.1rem;
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 0.9rem;
+      background: rgba(255,255,255,0.04);
+    }
     .project-card .pill {
       display: inline-flex;
       align-items: center;
@@ -1112,6 +1121,7 @@
           <article class="project-card reveal">
             <div class="flagship-badge"><i class="fa-solid fa-magnifying-glass"></i> Deep dive</div>
             <div class="pill"><i class="fa-solid fa-scale-balanced"></i> AI evaluation</div>
+            <img class="project-evidence" src="evidences/AI%20Evaluation%20Platform.png" alt="AI Evaluation Platform dashboard evidence" />
             <h3>ai-evaluation-platform</h3>
             <p><strong>Why this matters:</strong> Shows a structured, repeatable way to evaluate LLM systems with reusable metrics, clear reporting, and a reproducible local workflow that supports stronger engineering decisions.</p>
             <p>The repository is structured around dataset-driven benchmarking, provider abstraction, metrics, reporting, SQLite persistence, FastAPI access, and a Streamlit dashboard.</p>
@@ -1127,6 +1137,7 @@
 
           <article class="project-card reveal">
             <div class="pill"><i class="fa-solid fa-eye"></i> Robotics perception</div>
+            <img class="project-evidence" src="evidences/Robot%20Vision%20System.png" alt="Robot Vision System dashboard evidence" />
             <h3>robot-vision-dashboard</h3>
             <p><strong>Why this matters:</strong> Shows a perception pipeline rather than an isolated model demo: video input flows through browser inference, tracking, telemetry, and a live dashboard.</p>
             <p class="project-proof"><strong>Evidence:</strong> the running interface reports 35 ms inference latency, 7.3 FPS, 3 detected objects, and 3 tracked objects.</p>
@@ -1138,6 +1149,7 @@
         <div class="project-grid">
           <article class="project-card reveal">
             <div class="pill"><i class="fa-solid fa-cloud"></i> AWS AI</div>
+            <img class="project-evidence" src="evidences/AWS-AI-Generative.png" alt="AWS AI Generative project evidence" />
             <h3>AWS AI Generative</h3>
             <p><strong>Why this matters:</strong> Shows practical cloud AI architecture with Bedrock integration, serverless patterns, and retrieval-oriented workflows. The repository is presented honestly as architecture and implementation, without unverified benchmark claims.</p>
             <div class="meta">Python • Bedrock • Lambda • SAM</div>
@@ -1151,12 +1163,14 @@
           </article>
           <article class="project-card reveal">
             <div class="pill"><i class="fa-solid fa-diagram-project"></i> MCP</div>
+            <img class="project-evidence" src="evidences/mcp-advanced-starter.png" alt="MCP advanced starter project evidence" />
             <h3>mcp-advanced-starter</h3>
             <p>An advanced starter for Model Context Protocol concepts, including transport, roots, elicitation, and server-initiated sampling for richer agent workflows.</p>
             <a class="project-link" href="https://github.com/Lazaro549/mcp-advanced-starter" target="_blank" rel="noreferrer noopener">View repository <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
           </article>
           <article class="project-card reveal">
             <div class="pill"><i class="fa-solid fa-terminal"></i> Developer tooling</div>
+            <img class="project-evidence" src="evidences/claude-code-starter.png" alt="Claude Code Starter project evidence" />
             <h3>Claude Code Starter</h3>
             <p>A practical starter for integrating Claude Code into an executable developer workflow, with a CLI-first structure that supports automation, repeatable tasks, and cleaner engineering practices.</p>
             <div class="meta">CLI • automation • developer workflow</div>
