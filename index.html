@@ -14,6 +14,8 @@
   <meta name="twitter:description" content="I build AI and robotics systems, then measure how they behave." />
   <meta name="twitter:image" content="https://lazaro549.github.io/Portfolio/og-image.svg" />
   <title>Lázaro Gómez Vitolo | AI & Robotics Developer</title>
+  <meta name="theme-color" content="#020603" />
+  <link rel="dns-prefetch" href="https://github.com" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet" />
@@ -92,7 +94,7 @@
       <div class="container">
         <div class="section-heading reveal">
           <span class="section-label">01 — Philosophy</span>
-          <h2>About &amp; engineering philosophy</h2>
+          <h2>About & engineering philosophy</h2>
           <p>I focus on systems that are useful, testable, and grounded in the realities of real-world deployment.</p>
         </div>
         <div class="about-card card reveal">
@@ -113,7 +115,7 @@
           <div class="loop-grid">
             <div class="loop-step"><strong>Build</strong><span>Reusable systems</span></div>
             <div class="loop-step"><strong>Run</strong><span>Real workflows</span></div>
-            <div class="loop-step"><strong>Measure</strong><span>Latency &amp; cost</span></div>
+            <div class="loop-step"><strong>Measure</strong><span>Latency & cost</span></div>
             <div class="loop-step"><strong>Learn</strong><span>From failures</span></div>
           </div>
         </div>
@@ -148,7 +150,7 @@
       <div class="container">
         <div class="section-heading reveal">
           <span class="section-label">03 — Measurement</span>
-          <h2>Evidence &amp; measured outcomes</h2>
+          <h2>Evidence & measured outcomes</h2>
           <p>No fabricated metrics. If a result hasn’t been measured, it shouldn’t be presented as measured.</p>
         </div>
         <div class="evidence-grid">
@@ -164,7 +166,7 @@
               <div class="evidence-metric"><strong>Offline + online</strong><span>Evaluation modes</span></div>
               <div class="evidence-metric"><strong>Mock provider</strong><span>Reproducible runs</span></div>
               <div class="evidence-metric"><strong>FastAPI + React</strong><span>Full-stack platform</span></div>
-              <div class="evidence-metric"><strong>Docker-ready</strong><span>Local &amp; deployable</span></div>
+              <div class="evidence-metric"><strong>Docker-ready</strong><span>Local & deployable</span></div>
             </div>
             <p class="evidence-caption"><strong>Role:</strong> Measurement layer for LLM applications — standardized reports that feed engineering decisions.</p>
           </article>
@@ -200,9 +202,12 @@
 
         <div class="project-grid">
           <article class="project-card card reveal">
-            <div class="pill"><i class="fa-solid fa-graduation-cap" aria-hidden="true"></i> Deep Learning</div>
+            <div class="card-top">
+              <div class="pill"><i class="fa-solid fa-graduation-cap" aria-hidden="true"></i> Deep Learning</div>
+              <span class="maturity-badge maturity-starter">Starter</span>
+            </div>
             <h3>intro-deep-learning-starter</h3>
-            <p>A hands-on starter for learning and exploring the fundamentals of deep learning with TensorFlow &amp; Keras on structured data — fully executed notebooks with outputs ready on GitHub.</p>
+            <p>A hands-on starter for learning and exploring the fundamentals of deep learning with TensorFlow & Keras on structured data — fully executed notebooks with outputs ready on GitHub.</p>
             <p class="why-matters"><strong>Why this matters:</strong> Turns course concepts into reproducible experiments with clear evaluation of overfitting, regularization, and classification metrics.</p>
             <div class="project-footer">
               <div class="meta">Python · TensorFlow · Keras · Jupyter</div>
@@ -211,7 +216,10 @@
           </article>
 
           <article class="project-card card reveal">
-            <div class="pill"><i class="fa-solid fa-flask" aria-hidden="true"></i> AI Engineering</div>
+            <div class="card-top">
+              <div class="pill"><i class="fa-solid fa-flask" aria-hidden="true"></i> AI Engineering</div>
+              <span class="maturity-badge maturity-lab">Lab</span>
+            </div>
             <h3>ai-engineering-lab</h3>
             <p>Practical AI engineering lab for evaluating AI systems, benchmarking RAG architectures, and experimenting with AI-assisted software development.</p>
             <p class="why-matters"><strong>Why this matters:</strong> Connects AI projects through a measurable workflow for building, evaluating, benchmarking, and improving systems — with clear separation between measured and illustrative results.</p>
@@ -222,7 +230,10 @@
           </article>
 
           <article class="project-card card reveal">
-            <div class="pill"><i class="fa-solid fa-diagram-project" aria-hidden="true"></i> MCP</div>
+            <div class="card-top">
+              <div class="pill"><i class="fa-solid fa-diagram-project" aria-hidden="true"></i> MCP</div>
+              <span class="maturity-badge maturity-pattern">Pattern</span>
+            </div>
             <h3>mcp-advanced-starter</h3>
             <p>Advanced Model Context Protocol server demonstrating sampling, elicitation, roots, pagination, structured output, Streamable HTTP, resumability, and OAuth 2.1 + PKCE.</p>
             <p class="why-matters"><strong>Why this matters:</strong> Provides a production-oriented foundation for richer agent workflows and safer tool integration patterns.</p>
@@ -233,7 +244,10 @@
           </article>
 
           <article class="project-card card reveal">
-            <div class="pill"><i class="fa-solid fa-eye" aria-hidden="true"></i> Robotics Perception</div>
+            <div class="card-top">
+              <div class="pill"><i class="fa-solid fa-eye" aria-hidden="true"></i> Robotics Perception</div>
+              <span class="maturity-badge maturity-lab">Lab</span>
+            </div>
             <h3>robot-vision-dashboard</h3>
             <p>Real-time browser-based computer vision dashboard with COCO-SSD object detection, lightweight tracking, performance metrics, and simulated robot telemetry.</p>
             <p class="why-matters"><strong>Why this matters:</strong> Shows a perception pipeline rather than an isolated model demo: video input flows through browser inference, tracking, telemetry, and a live dashboard.</p>
@@ -244,7 +258,10 @@
           </article>
 
           <article class="project-card card reveal">
-            <div class="pill"><i class="fa-solid fa-store" aria-hidden="true"></i> E-commerce Optimization</div>
+            <div class="card-top">
+              <div class="pill"><i class="fa-solid fa-store" aria-hidden="true"></i> E-commerce Optimization</div>
+              <span class="maturity-badge maturity-applied">Applied</span>
+            </div>
             <h3>The-AI-s-Mercado-Libre-in-develop</h3>
             <p>AI-powered Mercado Libre product and advertising optimizer for data-driven performance analysis, profitability insights, and campaign decisions.</p>
             <p class="why-matters"><strong>Why this matters:</strong> Surfaces profitability issues and ranks products with actionable scale, optimize, or pause recommendations based on real seller metrics.</p>
@@ -255,7 +272,10 @@
           </article>
 
           <article class="project-card card reveal">
-            <div class="pill"><i class="fa-solid fa-robot" aria-hidden="true"></i> Anthropic Ecosystem</div>
+            <div class="card-top">
+              <div class="pill"><i class="fa-solid fa-robot" aria-hidden="true"></i> Anthropic Ecosystem</div>
+              <span class="maturity-badge maturity-starter">Starter</span>
+            </div>
             <h3>claude-api-starter</h3>
             <p>A practical Python starter kit for Claude API patterns such as prompts, conversation state, streaming, tool use, and agent loops.</p>
             <p class="why-matters"><strong>Why this matters:</strong> Accelerates real engineering workflows with reusable patterns for production-style Claude integrations.</p>
@@ -272,7 +292,7 @@
       <div class="container">
         <div class="section-heading reveal">
           <span class="section-label">05 — Experiments</span>
-          <h2>Labs &amp; experiments</h2>
+          <h2>Labs & experiments</h2>
           <p>Interactive or exploratory work that demonstrates the pipeline from perception to decision.</p>
         </div>
         <div class="labs-grid">
@@ -294,44 +314,44 @@
       <div class="container">
         <div class="section-heading reveal">
           <span class="section-label">06 — Stack</span>
-          <h2>Tools I use</h2>
-          <p>A practical stack built around moving ideas quickly while keeping the architecture clear, maintainable, and grounded in execution.</p>
+          <h2>Tools & technologies</h2>
+          <p>Languages, frameworks, and platforms I use to build, evaluate, and ship systems.</p>
         </div>
         <div class="stack-grid">
           <article class="stack-card card reveal">
             <h3>Languages</h3>
             <ul>
               <li>Python</li>
-              <li>JavaScript / TypeScript</li>
-              <li>PHP</li>
+              <li>TypeScript / JavaScript</li>
               <li>SQL</li>
+              <li>Bash</li>
             </ul>
           </article>
           <article class="stack-card card reveal">
-            <h3>AI / LLM &amp; Cloud</h3>
+            <h3>AI & ML</h3>
             <ul>
-              <li>Anthropic Claude APIs</li>
-              <li>Amazon Bedrock</li>
-              <li>AWS AI services</li>
-              <li>RAG and prompt workflows</li>
+              <li>Claude / Anthropic</li>
+              <li>TensorFlow / Keras</li>
+              <li>TensorFlow.js</li>
+              <li>RAG & evaluation</li>
             </ul>
           </article>
           <article class="stack-card card reveal">
-            <h3>Robotics &amp; Embedded</h3>
+            <h3>Cloud & infra</h3>
             <ul>
-              <li>Arduino</li>
-              <li>Control loops</li>
-              <li>Computer vision demos</li>
-              <li>Sensor-driven prototypes</li>
-            </ul>
-          </article>
-          <article class="stack-card card reveal">
-            <h3>Developer tools</h3>
-            <ul>
+              <li>AWS</li>
+              <li>Docker</li>
+              <li>FastAPI</li>
               <li>GitHub Actions</li>
-              <li>Model Context Protocol</li>
-              <li>Subagents and hooks</li>
-              <li>CLI tooling</li>
+            </ul>
+          </article>
+          <article class="stack-card card reveal">
+            <h3>Product & UX</h3>
+            <ul>
+              <li>React</li>
+              <li>Streamlit</li>
+              <li>MCP servers</li>
+              <li>Browser CV</li>
             </ul>
           </article>
         </div>
@@ -343,14 +363,14 @@
         <div class="contact-card card reveal">
           <div class="section-heading">
             <span class="section-label">07 — Contact</span>
-            <h2>Let’s connect</h2>
-            <p>If you’re hiring, building something adjacent, or looking for a developer who can work across AI, robotics, and practical software systems, I’d welcome the opportunity to connect and discuss where this experience can create value.</p>
+            <h2>Let’s build something measurable</h2>
           </div>
-          <p><strong>Email:</strong> <a href="mailto:lazarogvitolo@gmail.com">lazarogvitolo@gmail.com</a></p>
+          <p>Open to roles and collaborations in applied AI, robotics software, evaluation systems, and developer tooling.</p>
+          <p>Email: <a href="mailto:lazarogvitolo@gmail.com">lazarogvitolo@gmail.com</a></p>
           <div class="contact-actions">
-            <a class="btn btn-primary" href="mailto:lazarogvitolo@gmail.com"><i class="fa-solid fa-paper-plane" aria-hidden="true"></i> Say hello</a>
-            <a class="btn btn-secondary" href="https://www.linkedin.com/in/lazaro-gomez-vitolo-532109340/" target="_blank" rel="noreferrer noopener"><i class="fab fa-linkedin" aria-hidden="true"></i> LinkedIn</a>
+            <a class="btn btn-primary" href="mailto:lazarogvitolo@gmail.com"><i class="fa-solid fa-envelope" aria-hidden="true"></i> Email me</a>
             <a class="btn btn-secondary" href="https://github.com/Lazaro549" target="_blank" rel="noreferrer noopener"><i class="fab fa-github" aria-hidden="true"></i> GitHub</a>
+            <a class="btn btn-secondary" href="https://www.linkedin.com/in/lazaro-gomez-vitolo" target="_blank" rel="noreferrer noopener"><i class="fab fa-linkedin" aria-hidden="true"></i> LinkedIn</a>
           </div>
           <div class="download-row">
             <a href="Lazaro%20Gomez%20Vitolo-CV.pdf" download><i class="fa-solid fa-file-pdf" aria-hidden="true"></i> Download CV</a>
@@ -360,6 +380,11 @@
       </div>
     </section>
   </main>
+
+  <div class="mobile-cta" aria-label="Quick actions">
+    <a class="btn btn-primary" href="#projects"><i class="fa-solid fa-layer-group" aria-hidden="true"></i> Work</a>
+    <a class="btn btn-secondary" href="#contact"><i class="fa-solid fa-paper-plane" aria-hidden="true"></i> Contact</a>
+  </div>
 
   <footer>
     <div class="container">
@@ -403,6 +428,46 @@
           toggle.innerHTML = '<i class="fa-solid fa-bars" aria-hidden="true"></i>';
         });
       });
+    }
+
+    // Active section highlight in nav
+    const sectionIds = ['about', 'build', 'evidence', 'projects', 'labs', 'tools', 'contact'];
+    const navAnchors = document.querySelectorAll('.nav-links a[href^="#"]');
+    const sections = sectionIds
+      .map((id) => document.getElementById(id))
+      .filter(Boolean);
+
+    const setActiveNav = (id) => {
+      navAnchors.forEach((a) => {
+        const href = a.getAttribute('href') || '';
+        a.classList.toggle('active', href === '#' + id);
+      });
+    };
+
+    if ('IntersectionObserver' in window && sections.length) {
+      const sectionObserver = new IntersectionObserver(
+        (entries) => {
+          const visible = entries
+            .filter((e) => e.isIntersecting)
+            .sort((a, b) => b.intersectionRatio - a.intersectionRatio);
+          if (visible[0]) setActiveNav(visible[0].target.id);
+        },
+        { rootMargin: '-20% 0px -55% 0px', threshold: [0, 0.15, 0.35, 0.55] }
+      );
+      sections.forEach((s) => sectionObserver.observe(s));
+    }
+
+    // Hide mobile CTA near contact / footer
+    const mobileCta = document.querySelector('.mobile-cta');
+    const contactSection = document.getElementById('contact');
+    if (mobileCta && contactSection && 'IntersectionObserver' in window) {
+      const ctaObserver = new IntersectionObserver(
+        ([entry]) => {
+          mobileCta.classList.toggle('hidden', entry.isIntersecting);
+        },
+        { threshold: 0.15 }
+      );
+      ctaObserver.observe(contactSection);
     }
   </script>
 </body>
