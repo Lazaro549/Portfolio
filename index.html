@@ -3,15 +3,16 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Lázaro Gómez Vitolo builds generative AI, robotics, and developer tooling systems with a practical, product-minded approach." />
+  <meta name="description" content="Lázaro Gómez Vitolo builds generative AI, robotics, and developer tooling systems, then measures how they behave. Practical AI engineering from Mar del Plata, Argentina." />
   <meta property="og:title" content="Lázaro Gómez Vitolo | AI & Robotics Developer" />
-  <meta property="og:description" content="AI, robotics, and developer tooling work from Mar del Plata, Argentina." />
+  <meta property="og:description" content="I build AI and robotics systems, then measure how they behave. Generative AI, evaluation, RAG, computer vision, and developer tooling." />
   <meta property="og:type" content="website" />
-  <meta property="og:image" content="https://lazaro549.github.io/Portafolio/og-image.svg" />
+  <meta property="og:image" content="https://lazaro549.github.io/Portfolio/og-image.svg" />
+  <meta property="og:url" content="https://lazaro549.github.io/Portfolio/" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Lázaro Gómez Vitolo | AI & Robotics Developer" />
-  <meta name="twitter:description" content="AI, robotics, and developer tooling work from Mar del Plata, Argentina." />
-  <meta name="twitter:image" content="https://lazaro549.github.io/Portafolio/og-image.svg" />
+  <meta name="twitter:description" content="I build AI and robotics systems, then measure how they behave." />
+  <meta name="twitter:image" content="https://lazaro549.github.io/Portfolio/og-image.svg" />
   <title>Lázaro Gómez Vitolo | AI & Robotics Developer</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -112,13 +113,14 @@
       border: 1px solid rgba(255,255,255,0.14);
       object-fit: cover;
     }
-    .nav-links { display: flex; flex-wrap: wrap; gap: 0.75rem; }
+    .nav-links { display: flex; flex-wrap: wrap; gap: 0.4rem; }
     .nav-links a {
       color: var(--muted);
       text-decoration: none;
-      padding: 0.6rem 0.85rem;
+      padding: 0.55rem 0.8rem;
       border-radius: 999px;
       transition: color 180ms ease, background 180ms ease;
+      font-size: 0.92rem;
     }
     .nav-links a:hover,
     .nav-links a:focus-visible {
@@ -128,206 +130,101 @@
 
     main { overflow: hidden; }
     section {
-      padding: 5.5rem 0;
+      padding: 5rem 0;
       position: relative;
     }
     .section-heading {
       display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 1.5rem;
+      flex-direction: column;
+      gap: 0.75rem;
       margin-bottom: 2rem;
     }
     .section-heading h2 {
       margin: 0;
       font-family: "Space Grotesk", sans-serif;
-      font-size: clamp(1.5rem, 2vw, 2rem);
+      font-size: clamp(1.55rem, 2.2vw, 2.05rem);
       letter-spacing: -0.02em;
       color: var(--text);
     }
     .section-heading p {
       margin: 0;
       color: var(--muted);
-      max-width: 36rem;
+      max-width: 42rem;
     }
 
     .hero {
-      padding-top: 4rem;
+      padding-top: 3.5rem;
       padding-bottom: 3rem;
     }
     .hero-grid {
       display: grid;
-      grid-template-columns: 1.2fr 0.8fr;
-      gap: 2rem;
+      grid-template-columns: 1.25fr 0.75fr;
+      gap: 2.25rem;
       align-items: center;
     }
     .eyebrow {
       display: inline-flex;
       align-items: center;
       gap: 0.5rem;
-      padding: 0.55rem 0.8rem;
+      padding: 0.55rem 0.85rem;
       border-radius: 999px;
       color: var(--accent-soft);
       background: rgba(47, 143, 74, 0.14);
       border: 1px solid rgba(47, 143, 74, 0.24);
-      font-size: 0.85rem;
+      font-size: 0.82rem;
       font-weight: 600;
       letter-spacing: 0.08em;
       text-transform: uppercase;
-      margin-bottom: 1.2rem;
+      margin-bottom: 1.15rem;
     }
     .hero h1 {
       margin: 0 0 1rem;
       font-family: "Space Grotesk", sans-serif;
-      font-size: clamp(2.3rem, 4.5vw, 4.2rem);
-      line-height: 0.95;
+      font-size: clamp(2.15rem, 4.2vw, 3.6rem);
+      line-height: 1.05;
       letter-spacing: -0.035em;
     }
     .hero .lead {
-      max-width: 42rem;
-      font-size: 1.04rem;
+      max-width: 40rem;
+      font-size: 1.05rem;
       color: var(--muted);
-      margin: 0 0 1.1rem;
+      margin: 0 0 1.25rem;
     }
-    .hero-proof {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.7rem;
-      margin-bottom: 1.35rem;
-    }
-    .hero-proof span {
-      display: inline-flex;
-      align-items: center;
-      padding: 0.5rem 0.75rem;
-      border-radius: 999px;
-      background: rgba(255,255,255,0.04);
-      border: 1px solid rgba(255,255,255,0.1);
-      color: var(--muted);
-      font-size: 0.9rem;
-    }
-    .hero-proof strong {
-      color: var(--text);
-      font-weight: 700;
-      margin-right: 0.3rem;
-    }
-
-    .cover-note {
-      margin-top: 1rem;
-      padding: 1.25rem 1.35rem;
-      border: 1px solid var(--line);
-      border-radius: var(--radius);
-      background: linear-gradient(145deg, rgba(10, 20, 13, 0.94), rgba(3, 8, 4, 0.98));
-      box-shadow: var(--shadow);
-    }
-    .cover-note-title {
-      margin: 0 0 0.4rem;
-      color: var(--accent);
-      font-size: 0.82rem;
-      font-weight: 700;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-    }
-    .cover-note p:last-child {
-      margin: 0;
-      color: var(--muted);
-    }
-    .cover-note-link {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.35rem;
-      margin-top: 0.9rem;
-      color: var(--accent-soft);
-      font-weight: 700;
-      text-decoration: none;
-    }
-    .cover-note-link:hover,
-    .cover-note-link:focus-visible {
-      color: var(--accent);
-    }
-
     .role-stack {
       display: flex;
       flex-wrap: wrap;
-      gap: 0.6rem;
-      margin: 0 0 1.15rem;
+      gap: 0.55rem;
+      margin: 0 0 1.25rem;
     }
     .role-chip {
       display: inline-flex;
       align-items: center;
-      padding: 0.5rem 0.7rem;
+      padding: 0.45rem 0.7rem;
       border-radius: 999px;
       background: rgba(47, 143, 74, 0.12);
       border: 1px solid rgba(47, 143, 74, 0.2);
       color: var(--accent-soft);
-      font-size: 0.84rem;
+      font-size: 0.82rem;
       font-family: "JetBrains Mono", monospace;
     }
-
-    .focus-grid {
-      display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 1rem;
-    }
-    .focus-card {
-      padding: 1.35rem;
-      border: 1px solid var(--line);
-      border-radius: var(--radius);
-      background: linear-gradient(145deg, rgba(10, 20, 13, 0.94), rgba(3, 8, 4, 0.98));
-      box-shadow: var(--shadow);
-    }
-    .focus-card h3 {
-      margin: 0 0 0.55rem;
-      color: var(--accent);
-      font-size: 1rem;
-    }
-    .focus-card p {
-      margin: 0;
-      color: var(--muted);
-    }
-
-    .evidence-section { padding-top: 2rem; }
-    .evidence-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; }
-    .evidence-card {
-      position: relative;
-      padding: 1.35rem;
-      border: 1px solid var(--line);
-      border-radius: var(--radius);
-      background: linear-gradient(145deg, rgba(10, 20, 13, 0.96), rgba(3, 8, 4, 0.98));
-      box-shadow: var(--shadow);
-      overflow: hidden;
-    }
-    .evidence-card::after { content: ""; position: absolute; inset: auto -10% -45% 35%; height: 12rem; background: radial-gradient(circle, rgba(95, 182, 115, 0.16), transparent 68%); pointer-events: none; }
-    .evidence-card-header, .evidence-card-body { position: relative; z-index: 1; }
-    .evidence-card-header { display: flex; align-items: flex-start; justify-content: space-between; gap: 1rem; margin-bottom: 1.15rem; }
-    .evidence-card h3 { margin: 0 0 0.35rem; font-family: "Space Grotesk", sans-serif; font-size: 1.25rem; }
-    .evidence-card-header p { margin: 0; color: var(--muted); font-size: 0.92rem; }
-    .evidence-icon { display: inline-flex; align-items: center; justify-content: center; width: 2.5rem; height: 2.5rem; border-radius: 0.8rem; background: rgba(95, 182, 115, 0.14); border: 1px solid rgba(95, 182, 115, 0.26); color: var(--accent-soft); flex: 0 0 auto; }
-    .evidence-metrics { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 0.55rem; }
-    .evidence-metric { min-width: 0; padding: 0.7rem; border-radius: 0.8rem; background: rgba(255,255,255,0.035); border: 1px solid rgba(255,255,255,0.08); }
-    .evidence-metric strong { display: block; color: var(--text); font-family: "JetBrains Mono", monospace; font-size: 1.18rem; line-height: 1.2; }
-    .evidence-metric span { display: block; margin-top: 0.25rem; color: var(--muted); font-size: 0.72rem; line-height: 1.35; }
-    .evidence-caption { margin: 1rem 0 0; padding-top: 0.85rem; border-top: 1px solid rgba(255,255,255,0.08); color: var(--muted); font-size: 0.88rem; }
-    .evidence-caption strong { color: var(--accent-soft); }
-    .proof-bar { display: flex; flex-wrap: wrap; gap: 0.6rem; margin-top: 1rem; }
-    .proof-bar span { padding: 0.45rem 0.65rem; border-radius: 999px; color: var(--muted); background: rgba(255,255,255,0.035); border: 1px solid rgba(255,255,255,0.08); font-size: 0.78rem; }
-    .proof-bar i { color: var(--accent-soft); margin-right: 0.3rem; }
     .hero-actions {
       display: flex;
       flex-wrap: wrap;
-      gap: 0.9rem;
-      margin-bottom: 1.6rem;
+      gap: 0.85rem;
+      margin-bottom: 1.35rem;
     }
     .btn {
       display: inline-flex;
       align-items: center;
       justify-content: center;
       gap: 0.55rem;
-      padding: 0.9rem 1.2rem;
+      padding: 0.88rem 1.2rem;
       border-radius: 999px;
       text-decoration: none;
       font-weight: 700;
       border: 1px solid transparent;
       transition: transform 180ms ease, border-color 180ms ease, background 180ms ease;
+      font-size: 0.95rem;
     }
     .btn:hover,
     .btn:focus-visible {
@@ -343,34 +240,31 @@
       border-color: rgba(255,255,255,0.12);
       color: var(--text);
     }
-    .social-row {
+    .hero-proof {
       display: flex;
       flex-wrap: wrap;
-      gap: 0.8rem;
-      margin-top: 1.1rem;
+      gap: 0.6rem;
+      margin-bottom: 0.5rem;
     }
-    .social-row a {
+    .hero-proof span {
       display: inline-flex;
       align-items: center;
-      justify-content: center;
-      width: 42px;
-      height: 42px;
-      border-radius: 50%;
+      padding: 0.45rem 0.7rem;
+      border-radius: 999px;
       background: rgba(255,255,255,0.04);
-      border: 1px solid rgba(255,255,255,0.08);
-      color: var(--text);
-      text-decoration: none;
-      transition: transform 180ms ease, border-color 180ms ease;
+      border: 1px solid rgba(255,255,255,0.1);
+      color: var(--muted);
+      font-size: 0.86rem;
     }
-    .social-row a:hover,
-    .social-row a:focus-visible {
-      transform: translateY(-2px);
-      border-color: var(--accent);
+    .hero-proof strong {
+      color: var(--text);
+      font-weight: 700;
+      margin-right: 0.3rem;
     }
 
     .hero-card {
       position: relative;
-      padding: 1.2rem;
+      padding: 1.25rem;
       border-radius: var(--radius);
       border: 1px solid var(--line);
       background: linear-gradient(145deg, rgba(10, 20, 13, 0.96), rgba(2, 6, 3, 0.98));
@@ -392,390 +286,503 @@
       display: grid;
       gap: 1rem;
     }
-    .hero-card .panel-title {
-      font-size: 0.82rem;
-      font-weight: 700;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      color: var(--accent);
-      margin-bottom: 0.3rem;
-    }
-    .hero-card .panel-copy {
-      color: var(--muted);
-      margin: 0;
-    }
-    .hero-pills,
-    .chip-list {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.6rem;
-    }
-    .hero-pills span,
-    .chip-list span {
-      display: inline-flex;
-      align-items: center;
-      padding: 0.5rem 0.7rem;
-      border-radius: 999px;
-      background: rgba(47, 143, 74, 0.12);
-      color: var(--text);
-      font-size: 0.9rem;
-      border: 1px solid rgba(47, 143, 74, 0.2);
-      font-family: "JetBrains Mono", monospace;
-    }
     .hero-card .profile-photo {
       border-radius: 18px;
       border: 1px solid rgba(255,255,255,0.12);
       aspect-ratio: 1 / 1;
       object-fit: cover;
       width: 100%;
-      max-width: 230px;
+      max-width: 220px;
+      margin: 0 auto;
       box-shadow: 0 12px 30px rgba(0,0,0,0.2);
     }
+    .hero-card .panel-title {
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin: 0 0 0.25rem;
+      text-align: center;
+    }
+    .hero-card .panel-copy {
+      color: var(--muted);
+      margin: 0;
+      text-align: center;
+      font-size: 0.92rem;
+    }
+    .key-message {
+      margin-top: 0.75rem;
+      padding: 0.9rem 1rem;
+      border-radius: 14px;
+      background: rgba(47, 143, 74, 0.1);
+      border: 1px solid rgba(47, 143, 74, 0.22);
+      color: var(--text);
+      font-size: 0.9rem;
+      line-height: 1.55;
+      text-align: center;
+    }
+    .key-message strong {
+      color: var(--accent-soft);
+    }
 
-    .about-card,
-    .stack-card,
-    .project-card,
-    .contact-card {
+    .about-card {
       position: relative;
       border: 1px solid var(--line);
       background: linear-gradient(145deg, rgba(10, 20, 13, 0.94), rgba(3, 8, 4, 0.98));
       border-radius: var(--radius);
       box-shadow: var(--shadow);
+      padding: 2rem;
       overflow: hidden;
-      transition: transform 180ms ease, border-color 180ms ease, box-shadow 180ms ease;
     }
-    .about-card:hover,
-    .stack-card:hover,
-    .project-card:hover,
-    .contact-card:hover {
-      transform: translateY(-4px);
-      border-color: rgba(95, 182, 115, 0.4);
-      box-shadow: 0 24px 50px rgba(0, 0, 0, 0.56);
+    .about-card p {
+      color: var(--muted);
+      margin: 0 0 1rem;
     }
-    .about-card { padding: 2rem; }
-    .about-card p { color: var(--muted); margin-bottom: 0.95rem; }
+    .about-card p:last-child { margin-bottom: 0; }
     .about-card strong { color: var(--text); }
+
+    .loop-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 0.85rem;
+      margin-top: 1.5rem;
+    }
+    .loop-step {
+      padding: 1rem;
+      border-radius: 16px;
+      background: rgba(255,255,255,0.03);
+      border: 1px solid rgba(255,255,255,0.08);
+      text-align: center;
+    }
+    .loop-step strong {
+      display: block;
+      color: var(--accent-soft);
+      font-family: "JetBrains Mono", monospace;
+      font-size: 0.85rem;
+      margin-bottom: 0.35rem;
+    }
+    .loop-step span {
+      color: var(--muted);
+      font-size: 0.86rem;
+    }
+
+    .focus-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 1rem;
+    }
+    .focus-card {
+      padding: 1.4rem;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: linear-gradient(145deg, rgba(10, 20, 13, 0.94), rgba(3, 8, 4, 0.98));
+      box-shadow: var(--shadow);
+      transition: transform 180ms ease, border-color 180ms ease;
+    }
+    .focus-card:hover {
+      transform: translateY(-3px);
+      border-color: rgba(95, 182, 115, 0.4);
+    }
+    .focus-card h3 {
+      margin: 0 0 0.55rem;
+      color: var(--accent);
+      font-size: 1.05rem;
+      font-family: "Space Grotesk", sans-serif;
+    }
+    .focus-card p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
 
     .stack-grid {
       display: grid;
       grid-template-columns: repeat(4, minmax(0, 1fr));
       gap: 1rem;
     }
-    .stack-card { padding: 1.2rem; }
+    .stack-card {
+      padding: 1.25rem;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: linear-gradient(145deg, rgba(10, 20, 13, 0.94), rgba(3, 8, 4, 0.98));
+      box-shadow: var(--shadow);
+      transition: transform 180ms ease, border-color 180ms ease;
+    }
+    .stack-card:hover {
+      transform: translateY(-3px);
+      border-color: rgba(95, 182, 115, 0.35);
+    }
     .stack-card h3 {
-      margin: 0 0 0.6rem;
-      font-size: 1rem;
+      margin: 0 0 0.7rem;
+      font-size: 0.98rem;
       color: var(--accent);
     }
-    .stack-card ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 0.45rem; }
+    .stack-card ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: grid;
+      gap: 0.4rem;
+    }
     .stack-card li {
       color: var(--muted);
-      font-size: 0.95rem;
+      font-size: 0.92rem;
     }
 
-.case-study {
-      padding: 2rem;
+    .evidence-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 1rem;
+    }
+    .evidence-card {
+      position: relative;
+      padding: 1.4rem;
       border: 1px solid var(--line);
       border-radius: var(--radius);
       background: linear-gradient(145deg, rgba(10, 20, 13, 0.96), rgba(3, 8, 4, 0.98));
       box-shadow: var(--shadow);
+      overflow: hidden;
     }
-    .case-study-header {
+    .evidence-card::after {
+      content: "";
+      position: absolute;
+      inset: auto -10% -45% 35%;
+      height: 12rem;
+      background: radial-gradient(circle, rgba(95, 182, 115, 0.14), transparent 68%);
+      pointer-events: none;
+    }
+    .evidence-card-header {
       display: flex;
-      justify-content: space-between;
       align-items: flex-start;
+      justify-content: space-between;
       gap: 1rem;
-      margin-bottom: 1.25rem;
+      margin-bottom: 1rem;
+      position: relative;
+      z-index: 1;
     }
-    .case-study-header h2 {
-      margin: 0 0 0.35rem;
+    .evidence-card h3 {
+      margin: 0 0 0.3rem;
       font-family: "Space Grotesk", sans-serif;
-      font-size: clamp(1.7rem, 2vw, 2.25rem);
-      letter-spacing: -0.04em;
+      font-size: 1.15rem;
     }
-    .case-study-subtitle {
+    .evidence-card-header p {
       margin: 0;
       color: var(--muted);
-      max-width: 42rem;
+      font-size: 0.9rem;
     }
-    .case-study-link {
+    .evidence-icon {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 2.5rem;
+      height: 2.5rem;
+      border-radius: 0.8rem;
+      background: rgba(95, 182, 115, 0.14);
+      border: 1px solid rgba(95, 182, 115, 0.26);
+      color: var(--accent-soft);
+      flex: 0 0 auto;
+    }
+    .evidence-metrics {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 0.55rem;
+      position: relative;
+      z-index: 1;
+    }
+    .evidence-metric {
+      padding: 0.75rem;
+      border-radius: 0.8rem;
+      background: rgba(255,255,255,0.035);
+      border: 1px solid rgba(255,255,255,0.08);
+    }
+    .evidence-metric strong {
+      display: block;
+      color: var(--text);
+      font-family: "JetBrains Mono", monospace;
+      font-size: 1.05rem;
+      line-height: 1.2;
+    }
+    .evidence-metric span {
+      display: block;
+      margin-top: 0.25rem;
+      color: var(--muted);
+      font-size: 0.75rem;
+      line-height: 1.35;
+    }
+    .evidence-caption {
+      margin: 1rem 0 0;
+      padding-top: 0.85rem;
+      border-top: 1px solid rgba(255,255,255,0.08);
+      color: var(--muted);
+      font-size: 0.88rem;
+      position: relative;
+      z-index: 1;
+    }
+    .evidence-caption strong { color: var(--accent-soft); }
+
+    .workflow-diagram {
+      display: grid;
+      grid-template-columns: 1fr auto 1fr auto 1fr;
+      gap: 0.75rem;
+      align-items: center;
+      margin-top: 1.25rem;
+    }
+    .workflow-node {
+      padding: 1.1rem;
+      border-radius: 16px;
+      background: rgba(47, 143, 74, 0.1);
+      border: 1px solid rgba(47, 143, 74, 0.22);
+      text-align: center;
+    }
+    .workflow-node strong {
+      display: block;
+      color: var(--text);
+      font-size: 0.95rem;
+      margin-bottom: 0.25rem;
+    }
+    .workflow-node span {
+      color: var(--muted);
+      font-size: 0.82rem;
+    }
+    .workflow-arrow {
+      color: var(--accent-soft);
+      font-size: 1.3rem;
+      text-align: center;
+    }
+
+    .project-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 1.1rem;
+    }
+    .project-card {
+      position: relative;
+      border: 1px solid var(--line);
+      background: linear-gradient(145deg, rgba(10, 20, 13, 0.94), rgba(3, 8, 4, 0.98));
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 1.45rem;
+      overflow: hidden;
+      transition: transform 180ms ease, border-color 180ms ease, box-shadow 180ms ease;
+      display: flex;
+      flex-direction: column;
+      gap: 0.7rem;
+    }
+    .project-card:hover {
+      transform: translateY(-4px);
+      border-color: rgba(95, 182, 115, 0.4);
+      box-shadow: 0 24px 50px rgba(0, 0, 0, 0.56);
+    }
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      width: fit-content;
+      padding: 0.4rem 0.7rem;
+      border-radius: 999px;
+      background: rgba(47, 143, 74, 0.12);
+      border: 1px solid rgba(47, 143, 74, 0.22);
+      color: var(--accent-soft);
+      font-size: 0.78rem;
+      font-weight: 600;
+      letter-spacing: 0.03em;
+    }
+    .project-card h3 {
+      margin: 0;
+      font-family: "Space Grotesk", sans-serif;
+      font-size: 1.2rem;
+      letter-spacing: -0.02em;
+    }
+    .project-card p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 0.94rem;
+      flex-grow: 1;
+    }
+    .project-card .meta {
+      color: var(--muted);
+      font-size: 0.82rem;
+      font-family: "JetBrains Mono", monospace;
+    }
+    .project-link {
       display: inline-flex;
       align-items: center;
       gap: 0.4rem;
       color: var(--accent-soft);
       font-weight: 700;
       text-decoration: none;
-      white-space: nowrap;
-    }
-    .case-study-link:hover,
-    .case-study-link:focus-visible {
-      color: var(--accent);
-    }
-    .case-grid {
-      display: grid;
-      grid-template-columns: 1.4fr 0.6fr;
-      gap: 1.1rem;
-      align-items: start;
-    }
-    .case-body h3 {
-      margin: 1.1rem 0 0.4rem;
-      color: var(--text);
-      font-size: 1.08rem;
-      letter-spacing: -0.02em;
-    }
-    .case-body p,
-    .case-body li,
-    .case-body td,
-    .case-body th {
-      color: var(--muted);
-    }
-    .case-body ul {
-      margin: 0.5rem 0 0;
-      padding-left: 1.2rem;
-    }
-    .case-body strong { color: var(--text); }
-    .architecture-wrap {
-      margin-top: 0.9rem;
-      padding: 1rem;
-      border-radius: 1.1rem;
-      background: rgba(255,255,255,0.02);
-      border: 1px solid rgba(255,255,255,0.08);
-    }
-    .architecture-label {
-      margin: 0 0 0.7rem;
-      color: var(--accent-soft);
-      font-size: 0.7rem;
-      font-weight: 700;
-      letter-spacing: 0.11em;
-      text-transform: uppercase;
-    }
-    .architecture-diagram {
-      display: grid;
-      grid-template-columns: repeat(7, minmax(70px, 1fr));
-      gap: 0.6rem;
-      align-items: center;
-    }
-    .diagram-node {
-      position: relative;
-      min-height: 48px;
-      padding: 0.6rem 0.55rem;
-      border-radius: 0.8rem;
-      background: rgba(47, 143, 74, 0.12);
-      border: 1px solid rgba(47, 143, 74, 0.22);
-      color: var(--text);
-      text-align: center;
-      font-size: 0.72rem;
-      line-height: 1.3;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-    .diagram-node.is-strong {
-      background: rgba(95, 182, 115, 0.14);
-    }
-    .diagram-arrow {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: var(--accent-soft);
-      font-size: 1.2rem;
-      line-height: 1;
-    }
-    .diagram-txt {
-      margin-top: 0.7rem;
-      color: var(--muted);
       font-size: 0.92rem;
-    }
-    .decision-list {
-      display: grid;
-      gap: 0.8rem;
-      margin-top: 0.8rem;
-    }
-    .decision-item {
-      padding: 0.9rem 1rem;
-      border-radius: 1rem;
-      background: rgba(255,255,255,0.02);
-      border: 1px solid rgba(255,255,255,0.08);
-    }
-    .decision-item h4 {
-      margin: 0 0 0.35rem;
-      color: var(--text);
-      font-size: 1rem;
-    }
-    .decision-item p {
-      margin: 0.2rem 0;
-    }
-    .case-evidence {
-      padding: 1rem;
-      border: 1px solid var(--line);
-      border-radius: 1rem;
-      background: rgba(47, 143, 74, 0.05);
-    }
-    .case-evidence h3 {
-      margin: 0 0 0.75rem;
-      color: var(--accent-soft);
-      font-size: 0.74rem;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-    }
-    .evidence-table {
-      width: 100%;
-      border-collapse: collapse;
-    }
-    .evidence-table th,
-    .evidence-table td {
-      padding: 0.52rem 0.4rem;
-      text-align: left;
-      border-bottom: 1px solid rgba(255,255,255,0.08);
-      vertical-align: top;
-      font-size: 0.92rem;
-    }
-    .evidence-table th {
-      width: 38%;
-      color: var(--text);
-      font-weight: 700;
-    }
-    .flagship-badge {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.45rem;
-      padding: 0.42rem 0.68rem;
-      border-radius: 999px;
-      background: rgba(95, 182, 115, 0.1);
-      border: 1px solid rgba(95, 182, 115, 0.25);
-      color: var(--accent-soft);
-      font-size: 0.72rem;
-      font-weight: 700;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-    }
-    .project-highlight {
-      display: grid;
-      gap: 1rem;
-      grid-template-columns: 1.2fr 0.8fr;
-      margin-bottom: 1rem;
-    }
-    .project-card { padding: 1.35rem; }
-    .project-evidence {
-      width: 100%;
-      aspect-ratio: 16 / 9;
-      object-fit: cover;
-      margin: -0.1rem 0 1.1rem;
-      border: 1px solid rgba(255,255,255,0.1);
-      border-radius: 0.9rem;
-      background: rgba(255,255,255,0.04);
-    }
-    .project-card .pill {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.45rem;
-      padding: 0.45rem 0.7rem;
-      border-radius: 999px;
-      background: rgba(47, 143, 74, 0.14);
-      color: var(--accent-soft);
-      border: 1px solid rgba(47, 143, 74, 0.24);
-      font-size: 0.8rem;
-      font-weight: 700;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      margin-bottom: 0.8rem;
-    }
-    .project-card h3 { margin: 0 0 0.5rem; font-size: 1.2rem; }
-    .project-card p { color: var(--muted); margin: 0 0 0.8rem; }
-    .project-card .meta { color: var(--accent-soft); font-size: 0.92rem; }
-    .project-card .project-proof { margin: 1rem 0 0; padding: 0.85rem 1rem; border-left: 2px solid var(--accent-soft); background: rgba(95, 182, 115, 0.06); color: var(--text); font-size: 0.9rem; }
-    .project-link {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.3rem;
-      margin-top: 0.8rem;
-      color: var(--text);
-      text-decoration: none;
-      font-weight: 700;
+      margin-top: 0.25rem;
     }
     .project-link:hover,
     .project-link:focus-visible {
       color: var(--accent);
     }
+    .why-matters {
+      margin: 0;
+      padding: 0.75rem 0.9rem;
+      border-radius: 12px;
+      background: rgba(47, 143, 74, 0.08);
+      border: 1px solid rgba(47, 143, 74, 0.18);
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+    .why-matters strong {
+      color: var(--accent-soft);
+    }
 
-    .project-grid {
+    .labs-grid {
       display: grid;
       grid-template-columns: repeat(2, minmax(0, 1fr));
       gap: 1rem;
     }
-
-    .contact-card { padding: 2rem; display: grid; gap: 1rem; }
-    .contact-card p { color: var(--muted); margin: 0; }
-    .contact-actions { display: flex; flex-wrap: wrap; gap: 0.9rem; }
-    .contact-actions a { text-decoration: none; }
-    footer {
-      padding: 2.2rem 0 3rem;
-      color: var(--muted);
-      border-top: 1px solid rgba(255,255,255,0.08);
+    .lab-card {
+      padding: 1.35rem;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: linear-gradient(145deg, rgba(10, 20, 13, 0.94), rgba(3, 8, 4, 0.98));
+      box-shadow: var(--shadow);
     }
-    footer a { color: var(--text); }
+    .lab-card h3 {
+      margin: 0 0 0.45rem;
+      font-family: "Space Grotesk", sans-serif;
+      font-size: 1.1rem;
+    }
+    .lab-card p {
+      margin: 0 0 0.9rem;
+      color: var(--muted);
+      font-size: 0.93rem;
+    }
+
+    .contact-card {
+      position: relative;
+      border: 1px solid var(--line);
+      background: linear-gradient(145deg, rgba(10, 20, 13, 0.94), rgba(3, 8, 4, 0.98));
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 2rem;
+    }
+    .contact-card p {
+      color: var(--muted);
+      margin: 0 0 1rem;
+    }
+    .contact-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.85rem;
+      margin-top: 1.25rem;
+    }
+    .download-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      margin-top: 1.1rem;
+    }
+    .download-row a {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+      padding: 0.55rem 0.9rem;
+      border-radius: 999px;
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.1);
+      color: var(--text);
+      text-decoration: none;
+      font-size: 0.9rem;
+      font-weight: 600;
+      transition: border-color 180ms ease, transform 180ms ease;
+    }
+    .download-row a:hover {
+      border-color: var(--accent);
+      transform: translateY(-2px);
+    }
+
+    footer {
+      padding: 2rem 0 2.5rem;
+      border-top: 1px solid rgba(47, 143, 74, 0.18);
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+    footer .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 0.75rem;
+      align-items: center;
+    }
+    footer a {
+      color: var(--accent-soft);
+      text-decoration: none;
+    }
 
     .reveal {
       opacity: 0;
-      transform: translateY(20px);
-      transition: opacity 600ms ease, transform 600ms ease;
+      transform: translateY(18px);
+      transition: opacity 0.55s ease, transform 0.55s ease;
     }
-    .reveal.visible { opacity: 1; transform: translateY(0); }
-
-    :focus-visible {
-      outline: 3px solid var(--accent);
-      outline-offset: 3px;
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
     }
 
-    @media (max-width: 900px) {
+    @media (max-width: 960px) {
       .hero-grid,
-      .project-highlight,
       .project-grid,
-      .stack-grid,
-      .evidence-grid {
+      .evidence-grid,
+      .labs-grid,
+      .focus-grid {
         grid-template-columns: 1fr;
       }
-      .stack-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-    }
-    @media (max-width: 700px) {
-      .section-heading { flex-direction: column; align-items: flex-start; }
-      .hero { padding-top: 2rem; }
-      .nav-inner { flex-direction: column; align-items: flex-start; padding: 0.8rem 0; }
-      .nav-links { gap: 0.4rem; }
-      .stack-grid { grid-template-columns: 1fr; }
-      .evidence-metrics { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-      .hero-actions, .contact-actions { flex-direction: column; align-items: flex-start; }
-      .btn { width: 100%; }
-      .social-row { margin-top: 0.9rem; }
-    }
-
-    @media (prefers-reduced-motion: reduce) {
-      html { scroll-behavior: auto; }
-      *, *::before, *::after {
-        animation-duration: 0.01ms !important;
-        animation-iteration-count: 1 !important;
-        transition-duration: 0.01ms !important;
-        scroll-behavior: auto !important;
+      .stack-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
       }
-      .reveal { opacity: 1; transform: none; }
+      .loop-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+      .workflow-diagram {
+        grid-template-columns: 1fr;
+        gap: 0.5rem;
+      }
+      .workflow-arrow {
+        transform: rotate(90deg);
+      }
+      .nav-links {
+        display: none;
+      }
+    }
+    @media (max-width: 640px) {
+      section { padding: 3.5rem 0; }
+      .stack-grid,
+      .loop-grid {
+        grid-template-columns: 1fr;
+      }
+      .hero-actions,
+      .contact-actions {
+        flex-direction: column;
+        align-items: stretch;
+      }
+      .btn { width: 100%; }
     }
   </style>
 </head>
 <body>
   <a class="skip-link" href="#main-content">Skip to content</a>
-  <nav class="site-nav" aria-label="Main navigation">
+
+  <nav class="site-nav" aria-label="Primary">
     <div class="container nav-inner">
       <a class="brand-mark" href="#top">
-        <img src="resources/Robot.png" alt="" />
+        <img src="resources/Robot.png" alt="Lázaro Gómez Vitolo avatar" width="48" height="48" />
         <span>Lázaro Gómez Vitolo</span>
       </a>
       <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#build">Where I build</a>
         <a href="#evidence">Evidence</a>
-        <a href="#about">About me</a>
-        <a href="#focus">Where I build</a>
-        <a href="#tech-stack">Tools I use</a>
         <a href="#projects">Selected work</a>
-        <a href="#contact">Let’s connect</a>
+        <a href="#labs">Labs</a>
+        <a href="#tools">Tools</a>
+        <a href="#contact">Contact</a>
       </div>
     </div>
   </nav>
@@ -784,69 +791,81 @@
     <section class="hero" id="top">
       <div class="container hero-grid">
         <div class="reveal">
-          <div class="eyebrow"><i class="fa-solid fa-satellite-dish"></i> AI • Robotics • Developer tools</div>
+          <div class="eyebrow">AI • Robotics • Developer tools</div>
           <h1>I build AI and robotics systems, then measure how they behave.</h1>
+          <p class="lead">
+            Applied AI Engineer · Robotics Developer · ML / Software Engineer based in Mar del Plata, Argentina.
+            My work spans generative AI, evaluation, RAG, cloud systems, computer vision, robotics, and developer tooling.
+          </p>
           <div class="role-stack">
-            <span class="role-chip">Applied AI Engineer</span>
-            <span class="role-chip">Robotics Developer</span>
-            <span class="role-chip">ML / Software Engineer</span>
-          </div>
-          <p class="lead">I’m a software developer based in Mar del Plata, Argentina. My work spans generative AI, evaluation, RAG, cloud systems, computer vision, robotics, and developer tooling.</p>
-          <div class="hero-proof" aria-label="Core focus areas">
-            <span><strong>Build</strong> reusable systems</span>
-            <span><strong>Run</strong> real workflows</span>
-            <span><strong>Measure</strong> latency and cost</span>
-            <span><strong>Learn</strong> from failures</span>
+            <span class="role-chip">Build</span>
+            <span class="role-chip">Run</span>
+            <span class="role-chip">Measure</span>
+            <span class="role-chip">Learn</span>
           </div>
           <div class="hero-actions">
-            <a class="btn btn-primary" href="#projects"><i class="fa-solid fa-arrow-down"></i> Explore projects</a>
-            <a class="btn btn-secondary" href="Lazaro Gomez Vitolo-CV.pdf" download="Lazaro Gomez Vitolo-CV.pdf"><i class="fa-solid fa-file-arrow-down"></i> Download CV</a>
-            <a class="btn btn-secondary" href="Cover Letter.docx" download="Cover Letter.docx"><i class="fa-solid fa-file-lines"></i> Open cover letter</a>
+            <a class="btn btn-primary" href="#projects"><i class="fa-solid fa-layer-group"></i> View selected work</a>
+            <a class="btn btn-secondary" href="#contact"><i class="fa-solid fa-paper-plane"></i> Get in touch</a>
+            <a class="btn btn-secondary" href="https://github.com/Lazaro549" target="_blank" rel="noreferrer noopener"><i class="fab fa-github"></i> GitHub</a>
           </div>
-          <div class="social-row" aria-label="Social links">
-            <a href="https://github.com/Lazaro549" target="_blank" rel="noreferrer noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
-            <a href="https://www.linkedin.com/in/lazaro-gomez-vitolo-532109340/" target="_blank" rel="noreferrer noopener" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-            <a href="https://www.threads.com/@v.lazarogomez" target="_blank" rel="noreferrer noopener" aria-label="Threads"><i class="fa-brands fa-threads"></i></a>
-            <a href="mailto:lazarogvitolo@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+          <div class="hero-proof">
+            <span><strong>Focus</strong> practical systems</span>
+            <span><strong>Bias</strong> measurable outcomes</span>
+            <span><strong>Stack</strong> Python · TS · AWS · Claude</span>
           </div>
         </div>
 
-        <aside class="hero-card reveal" aria-label="Current focus areas">
+        <div class="hero-card reveal">
           <div class="hero-card-inner">
+            <img class="profile-photo" src="resources/Profile.png" alt="Portrait of Lázaro Gómez Vitolo" width="220" height="220" />
             <div>
-              <div class="panel-title">Current system map</div>
-              <p class="panel-copy">Applied work spans agentic AI, cloud-native systems, robotics prototypes, and the developer tooling required to make those systems operationally effective.</p>
+              <p class="panel-title">Engineering stance</p>
+              <p class="panel-copy">Useful · Testable · Grounded in real deployment</p>
             </div>
-            <img class="profile-photo" src="resources/Profile.png" alt="Portrait of Lázaro Gómez Vitolo" />
-            <div class="hero-pills">
-              <span>AWS Bedrock</span>
-              <span>Claude APIs</span>
-              <span>Arduino</span>
-              <span>Robotics protos</span>
+            <div class="key-message">
+              <strong>Key message:</strong> I don’t just build AI systems. I run them, measure latency, cost, quality and reliability — and use that evidence to improve them.
             </div>
           </div>
-        </aside>
+        </div>
       </div>
     </section>
 
     <section id="about">
       <div class="container">
+        <div class="section-heading reveal">
+          <h2>About & engineering philosophy</h2>
+          <p>I focus on systems that are useful, testable, and grounded in the realities of real-world deployment.</p>
+        </div>
         <div class="about-card reveal">
-          <div class="section-heading">
-            <h2>About me</h2>
-            <p>I focus on systems that are useful, testable, and grounded in the realities of real-world deployment.</p>
+          <p>
+            I’m a software developer with a strong bias toward practical execution. My work connects
+            <strong>generative AI</strong>, <strong>robotics</strong>, and <strong>developer experience</strong> —
+            from cloud-based AI prototypes to embedded control ideas and agentic tooling built for real engineering workflows.
+          </p>
+          <p>
+            Most of my public work focuses on reusable product patterns: Anthropic ecosystem starter kits,
+            AWS-based AI experiences, and experimental interfaces for computer vision, robotics, and control systems
+            designed to support real execution.
+          </p>
+          <p>
+            The goal is simple: move from “I built an AI project” to
+            <strong>“I built it, evaluated it, benchmarked it, analyzed the results, and used those results to improve the system.”</strong>
+          </p>
+          <div class="loop-grid">
+            <div class="loop-step"><strong>Build</strong><span>Reusable systems</span></div>
+            <div class="loop-step"><strong>Run</strong><span>Real workflows</span></div>
+            <div class="loop-step"><strong>Measure</strong><span>Latency & cost</span></div>
+            <div class="loop-step"><strong>Learn</strong><span>From failures</span></div>
           </div>
-          <p>I’m a software developer with a strong bias toward practical execution. My work connects <strong>generative AI</strong>, <strong>robotics</strong>, and <strong>developer experience</strong>—from cloud-based AI prototypes to embedded control ideas and agentic tooling built for real engineering workflows.</p>
-          <p>Most of my public work focuses on reusable product patterns: Anthropic ecosystem starter kits, AWS-based AI experiences, and experimental interfaces for computer vision, robotics, and control systems designed to support real execution.</p>
         </div>
       </div>
     </section>
 
-    <section id="focus">
+    <section id="build">
       <div class="container">
         <div class="section-heading reveal">
           <h2>Where I build</h2>
-          <p>I work at the intersection of intelligent systems, robotics prototyping, and the tooling that helps advanced workflows move from experimentation to dependable, scalable implementation.</p>
+          <p>I work at the intersection of intelligent systems, robotics prototyping, and the tooling that helps advanced workflows move from experimentation to dependable implementation.</p>
         </div>
         <div class="focus-grid">
           <article class="focus-card reveal">
@@ -865,7 +884,138 @@
       </div>
     </section>
 
-    <section id="tech-stack">
+    <section id="evidence">
+      <div class="container">
+        <div class="section-heading reveal">
+          <h2>Evidence & measured outcomes</h2>
+          <p>No fabricated metrics. If a result hasn’t been measured, it shouldn’t be presented as measured.</p>
+        </div>
+        <div class="evidence-grid">
+          <article class="evidence-card reveal">
+            <div class="evidence-card-header">
+              <div>
+                <h3>AI Evaluation Platform</h3>
+                <p>Quality · reliability · safety · latency · tokens · cost</p>
+              </div>
+              <div class="evidence-icon"><i class="fa-solid fa-chart-line"></i></div>
+            </div>
+            <div class="evidence-metrics">
+              <div class="evidence-metric"><strong>Offline + online</strong><span>Evaluation modes</span></div>
+              <div class="evidence-metric"><strong>Mock provider</strong><span>Reproducible runs</span></div>
+              <div class="evidence-metric"><strong>FastAPI + React</strong><span>Full-stack platform</span></div>
+              <div class="evidence-metric"><strong>Docker-ready</strong><span>Local & deployable</span></div>
+            </div>
+            <p class="evidence-caption"><strong>Role:</strong> Measurement layer for LLM applications — standardized reports that feed engineering decisions.</p>
+          </article>
+
+          <article class="evidence-card reveal">
+            <div class="evidence-card-header">
+              <div>
+                <h3>Engineering loop</h3>
+                <p>How projects connect into a measurable workflow</p>
+              </div>
+              <div class="evidence-icon"><i class="fa-solid fa-diagram-project"></i></div>
+            </div>
+            <div class="workflow-diagram" style="margin-top:0.5rem;">
+              <div class="workflow-node"><strong>Experiment</strong><span>AWS-AI-Generative</span></div>
+              <div class="workflow-arrow">→</div>
+              <div class="workflow-node"><strong>Measure</strong><span>ai-evaluation-platform</span></div>
+              <div class="workflow-arrow">→</div>
+              <div class="workflow-node"><strong>Decide</strong><span>ai-engineering-lab</span></div>
+            </div>
+            <p class="evidence-caption"><strong>Principle:</strong> Clear separation between measured results and illustrative demos.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <div class="container">
+        <div class="section-heading reveal">
+          <h2>Selected work</h2>
+          <p>Projects where technical depth, practical implementation, and credible evidence converge — evaluation systems, cloud AI, robotics perception, and developer tooling.</p>
+        </div>
+
+        <div class="project-grid">
+          <article class="project-card reveal">
+            <div class="pill"><i class="fa-solid fa-graduation-cap"></i> Deep Learning</div>
+            <h3>intro-deep-learning-starter</h3>
+            <p>A hands-on starter for learning and exploring the fundamentals of deep learning with TensorFlow & Keras on structured data — fully executed notebooks with outputs ready on GitHub.</p>
+            <p class="why-matters"><strong>Why this matters:</strong> Turns course concepts into reproducible experiments with clear evaluation of overfitting, regularization, and classification metrics.</p>
+            <div class="meta">Python · TensorFlow · Keras · Jupyter</div>
+            <a class="project-link" href="https://github.com/Lazaro549/intro-deep-learning-starter" target="_blank" rel="noreferrer noopener">View repository <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="pill"><i class="fa-solid fa-flask"></i> AI Engineering</div>
+            <h3>ai-engineering-lab</h3>
+            <p>Practical AI engineering lab for evaluating AI systems, benchmarking RAG architectures, and experimenting with AI-assisted software development.</p>
+            <p class="why-matters"><strong>Why this matters:</strong> Connects AI projects through a measurable workflow for building, evaluating, benchmarking, and improving systems — with clear separation between measured and illustrative results.</p>
+            <div class="meta">TypeScript · AI evaluation · Benchmarking</div>
+            <a class="project-link" href="https://github.com/Lazaro549/ai-engineering-lab" target="_blank" rel="noreferrer noopener">View repository <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="pill"><i class="fa-solid fa-diagram-project"></i> MCP</div>
+            <h3>mcp-advanced-starter</h3>
+            <p>Advanced Model Context Protocol server demonstrating sampling, elicitation, roots, pagination, structured output, Streamable HTTP, resumability, and OAuth 2.1 + PKCE.</p>
+            <p class="why-matters"><strong>Why this matters:</strong> Provides a production-oriented foundation for richer agent workflows and safer tool integration patterns.</p>
+            <div class="meta">TypeScript · MCP · OAuth · Developer tools</div>
+            <a class="project-link" href="https://github.com/Lazaro549/mcp-advanced-starter" target="_blank" rel="noreferrer noopener">View repository <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="pill"><i class="fa-solid fa-eye"></i> Robotics Perception</div>
+            <h3>robot-vision-dashboard</h3>
+            <p>Real-time browser-based computer vision dashboard with COCO-SSD object detection, lightweight tracking, performance metrics, and simulated robot telemetry.</p>
+            <p class="why-matters"><strong>Why this matters:</strong> Shows a perception pipeline rather than an isolated model demo: video input flows through browser inference, tracking, telemetry, and a live dashboard.</p>
+            <div class="meta">JavaScript · TensorFlow.js · COCO-SSD · Tracking</div>
+            <a class="project-link" href="https://github.com/Lazaro549/robot-vision-dashboard" target="_blank" rel="noreferrer noopener">View repository <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="pill"><i class="fa-solid fa-store"></i> E-commerce Optimization</div>
+            <h3>The-AI-s-Mercado-Libre-in-develop</h3>
+            <p>AI-powered Mercado Libre product and advertising optimizer for data-driven performance analysis, profitability insights, and campaign decisions.</p>
+            <p class="why-matters"><strong>Why this matters:</strong> Surfaces profitability issues and ranks products with actionable scale, optimize, or pause recommendations based on real seller metrics.</p>
+            <div class="meta">Python · Streamlit · Mercado Ads metrics</div>
+            <a class="project-link" href="https://github.com/Lazaro549/The-AI-s-Mercado-Libre-in-develop" target="_blank" rel="noreferrer noopener">View repository <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="pill"><i class="fa-solid fa-robot"></i> Anthropic Ecosystem</div>
+            <h3>claude-api-starter</h3>
+            <p>A practical Python starter kit for Claude API patterns such as prompts, conversation state, streaming, tool use, and agent loops.</p>
+            <p class="why-matters"><strong>Why this matters:</strong> Accelerates real engineering workflows with reusable patterns for production-style Claude integrations.</p>
+            <div class="meta">Python · Anthropic Claude · Agents · Streaming</div>
+            <a class="project-link" href="https://github.com/Lazaro549/claude-api-starter" target="_blank" rel="noreferrer noopener">View repository <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="labs">
+      <div class="container">
+        <div class="section-heading reveal">
+          <h2>Labs & experiments</h2>
+          <p>Interactive or exploratory work that demonstrates the pipeline from perception to decision.</p>
+        </div>
+        <div class="labs-grid">
+          <article class="lab-card reveal">
+            <h3>Robot Vision Dashboard</h3>
+            <p>Browser-based perception pipeline: live video → object detection → centroid tracking → telemetry visualization. Designed to feel closer to a robot control interface than a model demo.</p>
+            <a class="project-link" href="https://github.com/Lazaro549/robot-vision-dashboard" target="_blank" rel="noreferrer noopener">Open lab <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </article>
+          <article class="lab-card reveal">
+            <h3>AI Engineering Lab</h3>
+            <p>Hub that ties experiment outputs, evaluation reports, and engineering decisions together. Emphasizes reproducible benchmarks and honest reporting of what was actually measured.</p>
+            <a class="project-link" href="https://github.com/Lazaro549/ai-engineering-lab" target="_blank" rel="noreferrer noopener">Open lab <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="tools">
       <div class="container">
         <div class="section-heading reveal">
           <h2>Tools I use</h2>
@@ -882,7 +1032,7 @@
             </ul>
           </article>
           <article class="stack-card reveal">
-            <h3>AI / LLM &amp; Cloud</h3>
+            <h3>AI / LLM & Cloud</h3>
             <ul>
               <li>Anthropic Claude APIs</li>
               <li>Amazon Bedrock</li>
@@ -891,7 +1041,7 @@
             </ul>
           </article>
           <article class="stack-card reveal">
-            <h3>Robotics &amp; Embedded</h3>
+            <h3>Robotics & Embedded</h3>
             <ul>
               <li>Arduino</li>
               <li>Control loops</li>
@@ -912,72 +1062,22 @@
       </div>
     </section>
 
-    <section id="projects">
-              <div class="container">
-                <div class="section-heading reveal">
-                  <h2>Selected work</h2>
-                  <p>I focus on projects where technical depth, practical implementation, and credible evidence converge—particularly in evaluation systems, cloud AI, and computer vision that support informed decision-making.</p>
-                </div>
-
-                <div class="project-highlight">
-                  <article class="project-card reveal">
-                    <div class="pill"><i class="fa-solid fa-graduation-cap"></i> Deep Learning</div>
-                    <h3>intro-deep-learning-starter</h3>
-                    <p>A starter project for learning and exploring the fundamentals of deep learning.</p>
-                    <a class="project-link" href="https://github.com/Lazaro549/intro-deep-learning-starter" target="_blank" rel="noreferrer noopener">View repository <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                  </article>
-
-                  <article class="project-card reveal">
-                    <div class="pill"><i class="fa-solid fa-flask"></i> AI engineering</div>
-                    <h3>ai-engineering-lab</h3>
-                    <p><strong>Why this matters:</strong> Connects AI projects through a measurable workflow for building, evaluating, benchmarking, and improving systems, with clear separation between measured and illustrative results.</p>
-                    <div class="meta">TypeScript • AI evaluation • benchmarking</div>
-                    <a class="project-link" href="https://github.com/Lazaro549/ai-engineering-lab" target="_blank" rel="noreferrer noopener">View repository <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                  </article>
-                </div>
-
-                <div class="project-grid">
-                  <article class="project-card reveal">
-                    <div class="pill"><i class="fa-solid fa-diagram-project"></i> MCP</div>
-                    <h3>mcp-advanced-starter</h3>
-                    <p>An advanced starter for Model Context Protocol concepts, including transport, roots, elicitation, and server-initiated sampling for richer agent workflows.</p>
-                    <a class="project-link" href="https://github.com/Lazaro549/mcp-advanced-starter" target="_blank" rel="noreferrer noopener">View repository <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                  </article>
-                  <article class="project-card reveal">
-                    <div class="pill"><i class="fa-solid fa-eye"></i> Robotics perception</div>
-                    <h3>robot-vision-dashboard</h3>
-                    <p><strong>Why this matters:</strong> Shows a perception pipeline rather than an isolated model demo: video input flows through browser inference, tracking, telemetry, and a live dashboard.</p>
-                    <div class="meta">COCO-SSD • centroid tracking • TensorFlow.js</div>
-                    <a class="project-link" href="https://github.com/Lazaro549/robot-vision-dashboard" target="_blank" rel="noreferrer noopener">View repository <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                  </article>
-                  <article class="project-card reveal">
-                    <div class="pill"><i class="fa-solid fa-chart-line"></i> E-commerce optimization</div>
-                    <h3>The-AI-s-Mercado-Libre-in-develop</h3>
-                    <p>Analyzes Mercado Libre product and advertising performance, surfaces profitability issues, and ranks products with actionable scale, optimize, or pause recommendations.</p>
-                    <div class="meta">Python • Streamlit • Mercado Ads metrics</div>
-                    <a class="project-link" href="https://github.com/Lazaro549/The-AI-s-Mercado-Libre-in-develop" target="_blank" rel="noreferrer noopener">View repository <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                  </article>
-                  <article class="project-card reveal">
-                    <div class="pill"><i class="fa-solid fa-robot"></i> Anthropic Academy</div>
-                    <h3>claude-api-starter</h3>
-                    <p>A practical Python starter kit for Claude API patterns such as prompts, conversation state, streaming, tool use, and agent loops.</p>
-                    <a class="project-link" href="https://github.com/Lazaro549/claude-api-starter" target="_blank" rel="noreferrer noopener">View repository <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                  </article>
-                </div>
-              </div>
-            </section>
-
     <section id="contact">
       <div class="container">
         <div class="contact-card reveal">
-          <div class="section-heading">
+          <div class="section-heading" style="margin-bottom: 1rem;">
             <h2>Let’s connect</h2>
             <p>If you’re hiring, building something adjacent, or looking for a developer who can work across AI, robotics, and practical software systems, I’d welcome the opportunity to connect and discuss where this experience can create value.</p>
           </div>
-          <p><strong>Email:</strong> lazarogvitolo@gmail.com</p>
+          <p><strong>Email:</strong> <a href="mailto:lazarogvitolo@gmail.com">lazarogvitolo@gmail.com</a></p>
           <div class="contact-actions">
             <a class="btn btn-primary" href="mailto:lazarogvitolo@gmail.com"><i class="fa-solid fa-paper-plane"></i> Say hello</a>
-            <a class="btn btn-secondary" href="https://www.linkedin.com/in/lazaro-gomez-vitolo-532109340/" target="_blank" rel="noreferrer noopener"><i class="fab fa-linkedin"></i> Connect on LinkedIn</a>
+            <a class="btn btn-secondary" href="https://www.linkedin.com/in/lazaro-gomez-vitolo-532109340/" target="_blank" rel="noreferrer noopener"><i class="fab fa-linkedin"></i> LinkedIn</a>
+            <a class="btn btn-secondary" href="https://github.com/Lazaro549" target="_blank" rel="noreferrer noopener"><i class="fab fa-github"></i> GitHub</a>
+          </div>
+          <div class="download-row">
+            <a href="Lazaro%20Gomez%20Vitolo-CV.pdf" download><i class="fa-solid fa-file-pdf"></i> Download CV</a>
+            <a href="Cover%20Letter.docx" download><i class="fa-solid fa-file-word"></i> Download Cover Letter</a>
           </div>
         </div>
       </div>
@@ -986,13 +1086,13 @@
 
   <footer>
     <div class="container">
-      <p>© 2026 Lázaro Gómez Vitolo • Mar del Plata, Argentina</p>
+      <p>© 2026 Lázaro Gómez Vitolo · Mar del Plata, Argentina</p>
+      <p><a href="https://github.com/Lazaro549/Portfolio">Source on GitHub</a></p>
     </div>
   </footer>
 
   <script>
     const revealItems = document.querySelectorAll('.reveal');
-
     if ('IntersectionObserver' in window) {
       const observer = new IntersectionObserver((entries) => {
         entries.forEach((entry) => {
@@ -1001,8 +1101,7 @@
             observer.unobserve(entry.target);
           }
         });
-      }, { threshold: 0.16 });
-
+      }, { threshold: 0.14 });
       revealItems.forEach((item) => observer.observe(item));
     } else {
       revealItems.forEach((item) => item.classList.add('visible'));
