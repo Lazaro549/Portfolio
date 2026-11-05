@@ -335,12 +335,12 @@
             </ul>
           </article>
           <article class="stack-card card reveal">
-            <h3>AI & ML</h3>
+            <h3>AI / ML</h3>
             <ul>
               <li>Claude / Anthropic</li>
               <li>TensorFlow / Keras</li>
-              <li>TensorFlow.js</li>
               <li>RAG & evaluation</li>
+              <li>MCP tooling</li>
             </ul>
           </article>
           <article class="stack-card card reveal">
@@ -353,12 +353,12 @@
             </ul>
           </article>
           <article class="stack-card card reveal">
-            <h3>Product & UX</h3>
+            <h3>Frontend</h3>
             <ul>
               <li>React</li>
               <li>Streamlit</li>
-              <li>MCP servers</li>
-              <li>Browser CV</li>
+              <li>TensorFlow.js</li>
+              <li>Modern CSS</li>
             </ul>
           </article>
         </div>
@@ -367,21 +367,26 @@
 
     <section id="contact">
       <div class="container">
+        <div class="section-heading reveal">
+          <span class="section-label">07 — Contact</span>
+          <h2>Let’s build something measurable</h2>
+          <p>Open to roles and collaborations in applied AI, robotics systems, and developer tooling.</p>
+        </div>
         <div class="contact-card card reveal">
-          <div class="section-heading">
-            <span class="section-label">07 — Contact</span>
-            <h2>Let’s build something measurable</h2>
-          </div>
-          <p>Open to roles and collaborations in applied AI, robotics software, evaluation systems, and developer tooling.</p>
-          <p>Email: <a href="mailto:lazarogvitolo@gmail.com">lazarogvitolo@gmail.com</a></p>
+          <p>
+            If you’re hiring for practical AI engineering, evaluation systems, robotics perception, or agent tooling —
+            or you want to discuss a concrete problem — reach out.
+          </p>
           <div class="contact-actions">
-            <a class="btn btn-primary" href="mailto:lazarogvitolo@gmail.com"><i class="fa-solid fa-envelope" aria-hidden="true"></i> Email me</a>
+            <a class="btn btn-primary" href="mailto:lazarogvitolo@gmail.com"><i class="fa-solid fa-envelope" aria-hidden="true"></i> Email</a>
             <a class="btn btn-secondary" href="https://github.com/Lazaro549" target="_blank" rel="noreferrer noopener"><i class="fab fa-github" aria-hidden="true"></i> GitHub</a>
-            <a class="btn btn-secondary" href="https://www.linkedin.com/in/lazaro-gomez-vitolo" target="_blank" rel="noreferrer noopener"><i class="fab fa-linkedin" aria-hidden="true"></i> LinkedIn</a>
+            <a class="btn btn-secondary" href="Lazaro Gomez Vitolo-CV.pdf" target="_blank" rel="noreferrer noopener"><i class="fa-solid fa-file-pdf" aria-hidden="true"></i> Download CV</a>
+            <a class="btn btn-secondary" href="Cover Letter.docx" target="_blank" rel="noreferrer noopener"><i class="fa-solid fa-file-word" aria-hidden="true"></i> Cover letter</a>
           </div>
-          <div class="download-row">
-            <a href="Lazaro%20Gomez%20Vitolo-CV.pdf" download><i class="fa-solid fa-file-pdf" aria-hidden="true"></i> Download CV</a>
-            <a href="Cover%20Letter.docx" download><i class="fa-solid fa-file-word" aria-hidden="true"></i> Download Cover Letter</a>
+          <div class="contact-meta">
+            <span>Mar del Plata, Argentina</span>
+            <a href="mailto:lazarogvitolo@gmail.com">lazarogvitolo@gmail.com</a>
+            <a href="https://github.com/Lazaro549" target="_blank" rel="noreferrer noopener">github.com/Lazaro549</a>
           </div>
         </div>
       </div>
@@ -399,6 +404,9 @@
       <p><a href="https://github.com/Lazaro549/Portfolio">Source on GitHub</a></p>
     </div>
   </footer>
+
+  <div class="cursor-dot" aria-hidden="true"></div>
+  <div class="cursor-ring" aria-hidden="true"></div>
 
   <script>
     const revealItems = document.querySelectorAll('.reveal');
@@ -497,6 +505,52 @@
         { threshold: 0.15 }
       );
       ctaObserver.observe(contactSection);
+    }
+
+    // Custom robotic cursor (desktop / fine pointer only)
+    const finePointer = window.matchMedia('(hover: hover) and (pointer: fine)').matches;
+    const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (finePointer && !reduceMotion) {
+      const dot = document.querySelector('.cursor-dot');
+      const ring = document.querySelector('.cursor-ring');
+      let x = 0;
+      let y = 0;
+      let rx = 0;
+      let ry = 0;
+      let rafId = null;
+
+      const followRing = () => {
+        rx += (x - rx) * 0.2;
+        ry += (y - ry) * 0.2;
+        if (ring) ring.style.transform = 'translate3d(' + rx + 'px,' + ry + 'px,0)';
+        if (Math.abs(x - rx) > 0.15 || Math.abs(y - ry) > 0.15) {
+          rafId = requestAnimationFrame(followRing);
+        } else {
+          rafId = null;
+        }
+      };
+
+      document.addEventListener('mousemove', (e) => {
+        x = e.clientX;
+        y = e.clientY;
+        if (dot) dot.style.transform = 'translate3d(' + x + 'px,' + y + 'px,0)';
+        document.body.classList.add('cursor-ready');
+        if (!rafId) rafId = requestAnimationFrame(followRing);
+      }, { passive: true });
+
+      document.addEventListener('mouseleave', () => {
+        document.body.classList.remove('cursor-ready', 'cursor-hover', 'cursor-click');
+      });
+
+      const interactiveSel = 'a, button, .btn, .filter-chip, .nav-toggle, .project-link, input, textarea, select, [role="button"]';
+      document.addEventListener('mouseover', (e) => {
+        if (e.target.closest(interactiveSel)) document.body.classList.add('cursor-hover');
+      });
+      document.addEventListener('mouseout', (e) => {
+        if (e.target.closest(interactiveSel)) document.body.classList.remove('cursor-hover');
+      });
+      document.addEventListener('mousedown', () => document.body.classList.add('cursor-click'));
+      document.addEventListener('mouseup', () => document.body.classList.remove('cursor-click'));
     }
   </script>
 </body>
