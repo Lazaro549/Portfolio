@@ -200,22 +200,29 @@
           <p>Projects where technical depth, practical implementation, and credible evidence converge — evaluation systems, cloud AI, robotics perception, and developer tooling.</p>
         </div>
 
-        <div class="project-grid">
-          <article class="project-card card reveal">
+        <div class="project-filters reveal" role="group" aria-label="Filter projects by type">
+          <button type="button" class="filter-chip active" data-filter="all" aria-pressed="true">All</button>
+          <button type="button" class="filter-chip" data-filter="ai" aria-pressed="false">AI</button>
+          <button type="button" class="filter-chip" data-filter="robotics" aria-pressed="false">Robotics</button>
+          <button type="button" class="filter-chip" data-filter="tooling" aria-pressed="false">Tooling</button>
+        </div>
+
+        <div class="project-grid" id="project-grid">
+          <article class="project-card card reveal" data-category="ai">
             <div class="card-top">
               <div class="pill"><i class="fa-solid fa-graduation-cap" aria-hidden="true"></i> Deep Learning</div>
               <span class="maturity-badge maturity-starter">Starter</span>
             </div>
             <h3>intro-deep-learning-starter</h3>
             <p>A hands-on starter for learning and exploring the fundamentals of deep learning with TensorFlow & Keras on structured data — fully executed notebooks with outputs ready on GitHub.</p>
-            <p class="why-matters"><strong>Why this matters:</strong> Turns course concepts into reproducible experiments with clear evaluation of overfitting, regularization, and classification metrics.</p>
+            <p class="why-s"><strong>Why this matters:</strong> Turns course concepts into reproducible experiments with clear evaluation of overfitting, regularization, and classification metrics.</p>
             <div class="project-footer">
               <div class="meta">Python · TensorFlow · Keras · Jupyter</div>
               <a class="project-link" href="https://github.com/Lazaro549/intro-deep-learning-starter" target="_blank" rel="noreferrer noopener">View repository <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
             </div>
           </article>
 
-          <article class="project-card card reveal">
+          <article class="project-card card reveal" data-category="ai">
             <div class="card-top">
               <div class="pill"><i class="fa-solid fa-flask" aria-hidden="true"></i> AI Engineering</div>
               <span class="maturity-badge maturity-lab">Lab</span>
@@ -229,7 +236,7 @@
             </div>
           </article>
 
-          <article class="project-card card reveal">
+          <article class="project-card card reveal" data-category="tooling">
             <div class="card-top">
               <div class="pill"><i class="fa-solid fa-diagram-project" aria-hidden="true"></i> MCP</div>
               <span class="maturity-badge maturity-pattern">Pattern</span>
@@ -243,7 +250,7 @@
             </div>
           </article>
 
-          <article class="project-card card reveal">
+          <article class="project-card card reveal" data-category="robotics">
             <div class="card-top">
               <div class="pill"><i class="fa-solid fa-eye" aria-hidden="true"></i> Robotics Perception</div>
               <span class="maturity-badge maturity-lab">Lab</span>
@@ -257,7 +264,7 @@
             </div>
           </article>
 
-          <article class="project-card card reveal">
+          <article class="project-card card reveal" data-category="ai">
             <div class="card-top">
               <div class="pill"><i class="fa-solid fa-store" aria-hidden="true"></i> E-commerce Optimization</div>
               <span class="maturity-badge maturity-applied">Applied</span>
@@ -271,7 +278,7 @@
             </div>
           </article>
 
-          <article class="project-card card reveal">
+          <article class="project-card card reveal" data-category="ai">
             <div class="card-top">
               <div class="pill"><i class="fa-solid fa-robot" aria-hidden="true"></i> Anthropic Ecosystem</div>
               <span class="maturity-badge maturity-starter">Starter</span>
@@ -444,7 +451,7 @@
       });
     };
 
-    if ('IntersectionObserver' in window && sections.length) {
+    if ('IntersectionObserver' in window && sections.length legnth) {
       const sectionObserver = new IntersectionObserver(
         (entries) => {
           const visible = entries
@@ -456,6 +463,28 @@
       );
       sections.forEach((s) => sectionObserver.observe(s));
     }
+
+    // Project type filters
+    const filterChips = document.querySelectorAll('.filter-chip');
+    const projectCards = document.querySelectorAll('.project-card[data-category]');
+
+    const applyFilter = (filter) => {
+      filterChips.forEach((chip) => {
+        const isActive = chip.dataset.filter === filter;
+        chip.classList.toggle('active', isActive);
+        chip.setAttribute('aria-pressed', isActive ? 'true' : 'false');
+      });
+      projectCards.forEach((card) => {
+        const cat = card.getAttribute('data-category');
+        const show = filter === 'all' || cat === filter;
+        card.classList.toggle('is-hidden', !show);
+        card.setAttribute('aria-hidden', show ? 'false' : 'true');
+      });
+    };
+
+    filterChips.forEach((chip) => {
+      chip.addEventListener('click', () => applyFilter(chip.dataset.filter));
+    });
 
     // Hide mobile CTA near contact / footer
     const mobileCta = document.querySelector('.mobile-cta');
