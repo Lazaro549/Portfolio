@@ -1073,3 +1073,23 @@ body.cursor-click .cursor-dot {
     cursor: auto !important;
   }
 }
+
+.project-evidence-img {
+  width: 100%;
+  border-radius: 6px;
+  margin-bottom: 0.75rem;
+  object-fit: cover;
+  max-height: 200px;
+  display: block;
+}
+
+.project-evidence-gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.project-evidence-gallery .project-evidence-img {
+  margin-bottom: 0;
+}
